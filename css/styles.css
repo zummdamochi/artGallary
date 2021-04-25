@@ -39,11 +39,11 @@ main > p {
   margin: 0 auto;
   list-style: none;
   display: flex;
-  width: 80%;
+  width: 100%;
 }
 
 .images > ul > li {
-  padding: 20px;
+  padding: 8px;
   justify-content: space-between;
   align-self: center;
 }
@@ -81,11 +81,11 @@ main > p {
 .image3 > img {
   position: fixed;
   top: 100px;
-  right: 20px;
-  left: 20px;
+  right: 10px;
+  left: 10px;
   display: block;
   text-align: center;
-  height: 70%;
+  width: 60%;
   margin: 0 auto;
   transition: opacity 0.8s;
 }
@@ -94,7 +94,7 @@ main > p {
 #close2,
 #close3 {
   position: fixed;
-  top: 80px;
+  top: 50px;
   left: 50px;
   display: block;
   width: 50px;
@@ -120,33 +120,36 @@ main > p {
 }
 
 .us {
-  display: flex;
-  width: 60%;
-  margin: 250px auto;
+  width: 90%;
+  margin: 150px auto;
   text-align: center;
 }
 
 .us > img {
-  height: 500px;
+  width: 40%;
 }
 
 .us > p {
-  margin-left: 20px;
-  font-size: 24px;
+  margin-left: 10px;
+  font-size: 20px;
   align-self: center;
 }
 
 .attribute > p {
-  writing-mode: vertical-lr;
   font-family: 'Arial Narrow',sans-serif;
   letter-spacing: 2px;
   margin-bottom: 10px;
+  font-size: 12px;
 }
 
 .contact {
   width: 80%;
   margin: 20px auto 300px;
   text-align: center;
+}
+
+.contact > h1 {
+  font-size: 20px;
 }
 
 textarea {
@@ -173,4 +176,50 @@ textarea {
 
 .btn:hover {
   background: #ccc;
+}
+
+@media(min-width:800px) {
+  .images > ul {
+    width: 80%;
+  }
+
+  .images > ul > li {
+    padding: 20px;
+  }
+
+
+.image1 > img,
+.image2 > img,
+.image3 > img {
+  right: 20px;
+  left: 20px;
+  height: 70%;
+
+}
+
+#close1,
+#close2,
+#close3 {
+  top: 80px;
+}
+
+  .us {
+    display: flex;
+    width: 60%;
+    margin: 250px auto;
+  }
+
+  .us > p {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+
+  .attribute > p {
+    writing-mode: vertical-lr;
+    font-size: 16px;
+  }
+
+  .contact > h1 {
+    font-size: 32px;
+  }
 }
