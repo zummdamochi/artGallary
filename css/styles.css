@@ -1,0 +1,176 @@
+body {
+  font-family: 'ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+  margin: 0;
+  padding: 0;
+
+  animation: bgcolor 30s infinite alternate;
+}
+
+@keyframes bgcolor {
+  0% {
+    background: #fff;
+  }
+  25% {
+    background: hsl(30, 80%, 90%);
+  }
+  50% {
+    background: hsl(90, 80%, 90%);
+  }
+  75% {
+    background: hsl(150, 80%, 90%);
+  }
+  100% {
+    background: hsl(210, 80%,90%);
+  }
+
+}
+
+main > p {
+  width: 50%;
+  margin: 80px auto;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  font-family: 'Arial Narrow',sans-serif;
+}
+
+.images > ul {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  width: 80%;
+}
+
+.images > ul > li {
+  padding: 20px;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.images > ul > li > img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.images > ul > li > img:hover {
+  opacity: 0.8;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 0.6s;
+}
+
+.image1,
+.image2,
+.image3 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.image1 > img,
+.image2 > img,
+.image3 > img {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  left: 20px;
+  display: block;
+  text-align: center;
+  height: 70%;
+  margin: 0 auto;
+  transition: opacity 0.8s;
+}
+
+#close1,
+#close2,
+#close3 {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  pointer-events: none;
+  z-index: 50;
+  color: #fff;
+  opacity: 0;
+}
+
+.overlay.show,
+.image1.show,
+.image2.show,
+.image3.show,
+#close1.show,
+#close2.show,
+#close3.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.us {
+  display: flex;
+  width: 60%;
+  margin: 250px auto;
+  text-align: center;
+}
+
+.us > img {
+  height: 500px;
+}
+
+.us > p {
+  margin-left: 20px;
+  font-size: 24px;
+  align-self: center;
+}
+
+.attribute > p {
+  writing-mode: vertical-lr;
+  font-family: 'Arial Narrow',sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.contact {
+  width: 80%;
+  margin: 20px auto 300px;
+  text-align: center;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 200px;
+  line-height: 2;
+}
+
+.btn {
+  display: block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;;
+  margin: 20px auto;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3',sans-serif;
+}
+
+.btn:hover {
+  background: #ccc;
+}
