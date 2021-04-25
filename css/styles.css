@@ -93,7 +93,7 @@ main > p {
 #close1,
 #close2,
 #close3 {
-  position: absolute;
+  position: fixed;
   top: 80px;
   left: 50px;
   display: block;
